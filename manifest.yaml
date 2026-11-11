@@ -1,0 +1,25 @@
+{
+  "upstream": "RUVSeq",
+  "commit": "f560e84eb493f0c2d72279612f9e4ca99493b434",
+  "seed": 42,
+  "scope": [
+    "RUVg",
+    "RUVr",
+    "RUVs"
+  ],
+  "outputs": {
+    "deterministic": {
+      "atol": 1e-08,
+      "rtol": 1e-08
+    },
+    "projection": {
+      "atol": 1e-08
+    },
+    "pvalues": {
+      "spearman_min": 0.99,
+      "top20_jaccard_min": 0.9,
+      "atol": 1e-06
+    }
+  },
+  "status": "preregistered; no candidate tested"
+}
