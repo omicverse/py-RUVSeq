@@ -1,0 +1,53 @@
+{
+  "schema": "omicverse-port/v1",
+  "package": "py-RUVSeq",
+  "pypi": null,
+  "import_name": "pyruvseq",
+  "language": "python",
+  "upstream": {
+    "name": "RUVSeq",
+    "version": "1.33.1",
+    "commit": "f560e84eb493f0c2d72279612f9e4ca99493b434"
+  },
+  "parity": {
+    "status": "partial",
+    "fixture": "Pinned synthetic fixtures; muscat also includes a public Kang subset",
+    "test": "tests/"
+  },
+  "functions": [
+    {
+      "r": "makeGroups",
+      "py": "pyruvseq.make_groups",
+      "status": "partial",
+      "note": "Matrix/default-path subset; see README"
+    },
+    {
+      "r": "RUVg",
+      "py": "pyruvseq.ruvg",
+      "status": "partial",
+      "note": "RUVg, RUVr and RUVs matrix methods plus replicate-index construction. No EDASeq objects, automatic control selection or downstream DE."
+    },
+    {
+      "r": "RUVr",
+      "py": "pyruvseq.ruvr",
+      "status": "partial",
+      "note": "RUVg, RUVr and RUVs matrix methods plus replicate-index construction. No EDASeq objects, automatic control selection or downstream DE."
+    },
+    {
+      "r": "RUVs",
+      "py": "pyruvseq.ruvs",
+      "status": "partial",
+      "note": "RUVg, RUVr and RUVs matrix methods plus replicate-index construction. No EDASeq objects, automatic control selection or downstream DE."
+    }
+  ],
+  "omicverse": {
+    "module": null,
+    "since": null
+  },
+  "artifacts": {
+    "audit": "AUDIT.md",
+    "report": "RECONSTRUCTION_REPORT.md",
+    "compare_notebook": "examples/compare_R_vs_Python.ipynb",
+    "function_notebook": "examples/function_by_function_R_parity.ipynb"
+  }
+}
